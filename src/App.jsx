@@ -26,6 +26,7 @@ function App() {
           submit
         </button>
       </div>
+      {status === "loading" && <h1>Loading...</h1>}
       {status === "success" &&
         (data === "undefined" || data.length === 0 ? (
           <IsError />
